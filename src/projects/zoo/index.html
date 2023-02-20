@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/jqvmap.min.css" type="text/css" media="screen"/>
+    <script src="js/map/jquery.js"></script>
+    <script src="js/map/jquery.vmap.min.js"></script>
+    <script src="js/map/jquery.vmap.world.js"></script>
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Zoo Online</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active ct_color_FEFEFE">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="zoos.html" class="nav__link ct_color_FEFEFE">
+                            Zoos
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="map.html" class="nav__link ct_color_FEFEFE">
+                            Map
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact-form" class="nav__link ct_color_FEFEFE">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <a class="header__logo ct_color_FEFEFE" href="index.html">
+            zoo
+            <div class="header__logo_small">
+                online
+            </div>
+        </a>
+        <div class="header__theme">
+            <div class="header__theme-wrapper">
+                <div class="header__theme-ball"></div>
+            </div>
+        </div>
+        <div class="header__burger burger ct_span_white">
+            <span class="burger__span"></span>
+            <span class="burger__span"></span>
+            <span class="burger__span burger__span_short"></span>
+        </div>
+    </header>
+
+    <main class="promo">
+        <div class="container">
+            <h1 class="promo__title">
+                Watch your favorite animal online
+            </h1>
+
+            <a href="zoos.html" class="btn promo__btn">
+                <div class="play-mark"></div>
+                watch online
+            </a>
+
+            
+            <div class="promo__slider">
+                <div class="swiper-promo">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide animal-card">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Eagle`s name is Joomkhan. He is 1 year old. Joomkhan is from Afghanistan. He loves mices.
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#eagle' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/eagle.jpg" alt="animal" class="animal-card__img">
+                        </div>
+                        <div class="swiper-slide animal-card">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Panda`s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#panda' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/panda.jpg" alt="animal" class="animal-card__img">
+                        </div>
+                        <div class="swiper-slide animal-card">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Monkey`s name is Han. He is 4 years old. Han is from Nigeria. He loves bananas.
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#monkey' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/gorilla.webp" alt="animal" class="animal-card__img">
+                        </div>
+                        <div class="swiper-slide animal-card">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Croco`s name is Sally. He is 17 years old. Sally is from Tanzania. He loves goats:).
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#croco' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/alligator.jpg" alt="animal" class="animal-card__img">
+                        </div>
+                        <div class="swiper-slide animal-card">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Fox`s name is Redhead. He is 10 months old. Readhead is from Russia. He loves berries and meat.
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#fox' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/fox.jpg" alt="animal" class="animal-card__img">
+                        </div>
+                        <div class="swiper-slide animal-card">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Slothy is from Latin America. He came to us recently. He is a big banana lover.
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#sloth' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/sloth.webp" alt="animal" class="animal-card__img">
+                        </div>
+                        <div class="swiper-slide animal-card">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Biggy is one of rare elephants families from Savanna Deserts. He is 13 years old.
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#elephant' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/elephant.jpg" alt="animal" class="animal-card__img">
+                        </div>
+                        <div class="swiper-slide animal-card">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Our Leo is the fastest animal in our family. He did have a hard soul, but now he is happier than ever.
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#leopard' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/leopard.jpg" alt="animal" class="animal-card__img">
+                        </div>
+                    </div>
+                    <div class="swiper-controls">
+                        <div class="swiper-counter">
+                            <span class="swiper-counter__current">
+                                00
+                            </span>/<span class="swiper-counter__total">
+                                00
+                            </span>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="socials socials_promo promo__socials">
+            <a href="http://instagram.com" class="social__link">
+                <svg class="socials__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_32501_1246)">
+                    <path d="M13.75 0H6.25C2.79875 0 0 2.79875 0 6.25V13.75C0 17.2012 2.79875 20 6.25 20H13.75C17.2012 20 20 17.2012 20 13.75V6.25C20 2.79875 17.2012 0 13.75 0ZM18.125 13.75C18.125 16.1625 16.1625 18.125 13.75 18.125H6.25C3.8375 18.125 1.875 16.1625 1.875 13.75V6.25C1.875 3.8375 3.8375 1.875 6.25 1.875H13.75C16.1625 1.875 18.125 3.8375 18.125 6.25V13.75Z" fill="#FEFEFE"/>
+                    <path d="M10 5C7.23875 5 5 7.23875 5 10C5 12.7613 7.23875 15 10 15C12.7613 15 15 12.7613 15 10C15 7.23875 12.7613 5 10 5ZM10 13.125C8.2775 13.125 6.875 11.7225 6.875 10C6.875 8.27625 8.2775 6.875 10 6.875C11.7225 6.875 13.125 8.27625 13.125 10C13.125 11.7225 11.7225 13.125 10 13.125Z" fill="#FEFEFE"/>
+                    <path d="M15.3752 5.29148C15.7432 5.29148 16.0415 4.99319 16.0415 4.62523C16.0415 4.25727 15.7432 3.95898 15.3752 3.95898C15.0073 3.95898 14.709 4.25727 14.709 4.62523C14.709 4.99319 15.0073 5.29148 15.3752 5.29148Z" fill="#FEFEFE"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_32501_1246">
+                    <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <a href="http://twitter.com" class="social__link">
+                <svg class="socials__svg" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 1.92375C19.2562 2.25 18.4637 2.46625 17.6375 2.57125C18.4875 2.06375 19.1363 1.26625 19.4413 0.305C18.6488 0.7775 17.7737 1.11125 16.8412 1.2975C16.0887 0.49625 15.0162 0 13.8462 0C11.5762 0 9.74875 1.8425 9.74875 4.10125C9.74875 4.42625 9.77625 4.73875 9.84375 5.03625C6.435 4.87 3.41875 3.23625 1.3925 0.7475C1.03875 1.36125 0.83125 2.06375 0.83125 2.82C0.83125 4.24 1.5625 5.49875 2.6525 6.2275C1.99375 6.215 1.3475 6.02375 0.8 5.7225C0.8 5.735 0.8 5.75125 0.8 5.7675C0.8 7.76 2.22125 9.415 4.085 9.79625C3.75125 9.8875 3.3875 9.93125 3.01 9.93125C2.7475 9.93125 2.4825 9.91625 2.23375 9.86125C2.765 11.485 4.2725 12.6787 6.065 12.7175C4.67 13.8087 2.89875 14.4662 0.98125 14.4662C0.645 14.4662 0.3225 14.4512 0 14.41C1.81625 15.5812 3.96875 16.25 6.29 16.25C13.835 16.25 17.96 10 17.96 4.5825C17.96 4.40125 17.9537 4.22625 17.945 4.0525C18.7587 3.475 19.4425 2.75375 20 1.92375Z" fill="#FEFEFE"/>
+                </svg>
+            </a>
+            <a href="http://youtube.com" class="social__link">
+                <svg class="socials__svg" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.15 1.575C18.6075 0.61 18.0188 0.4325 16.82 0.365C15.6225 0.28375 12.6112 0.25 10.0025 0.25C7.38875 0.25 4.37625 0.28375 3.18 0.36375C1.98375 0.4325 1.39375 0.60875 0.84625 1.575C0.2875 2.53875 0 4.19875 0 7.12125C0 7.12375 0 7.125 0 7.125C0 7.1275 0 7.12875 0 7.12875V7.13125C0 10.0413 0.2875 11.7138 0.84625 12.6675C1.39375 13.6325 1.9825 13.8075 3.17875 13.8888C4.37625 13.9588 7.38875 14 10.0025 14C12.6112 14 15.6225 13.9587 16.8212 13.89C18.02 13.8087 18.6088 13.6338 19.1513 12.6688C19.715 11.715 20 10.0425 20 7.1325C20 7.1325 20 7.12875 20 7.12625C20 7.12625 20 7.12375 20 7.1225C20 4.19875 19.715 2.53875 19.15 1.575ZM7.5 10.875V3.375L13.75 7.125L7.5 10.875Z" fill="#FEFEFE"/>
+                </svg>
+            </a>
+            <a href="http://vk.com" class="social__link">
+                <svg class="socials__svg" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8217 10.1784C19.768 10.0883 19.4355 9.36579 17.8353 7.88068C16.1602 6.32557 16.3852 6.57809 18.4029 3.88914C19.6317 2.25152 20.123 1.25145 19.9692 0.823916C19.823 0.416387 18.9192 0.523894 18.9192 0.523894L15.9139 0.541396C15.9139 0.541396 15.6914 0.511393 15.5252 0.610151C15.3639 0.707658 15.2602 0.932674 15.2602 0.932674C15.2602 0.932674 14.7839 2.20027 14.1488 3.27785C12.81 5.55176 12.2737 5.67177 12.0549 5.53051C11.5461 5.20174 11.6736 4.20792 11.6736 3.50286C11.6736 1.29895 12.0074 0.380134 11.0223 0.142616C10.6948 0.0638606 10.4548 0.0113567 9.61848 0.00260608C8.54591 -0.00864474 7.63709 0.00635635 7.1233 0.257625C6.78078 0.425137 6.51701 0.798915 6.67827 0.820166C6.87703 0.846418 7.32707 0.941425 7.56583 1.26645C7.87461 1.68523 7.86336 2.6278 7.86336 2.6278C7.86336 2.6278 8.04087 5.22174 7.44958 5.54426C7.0433 5.76553 6.487 5.31425 5.29317 3.25034C4.68187 2.19402 4.21934 1.02518 4.21934 1.02518C4.21934 1.02518 4.13058 0.807665 3.97182 0.691407C3.77931 0.550146 3.50929 0.505143 3.50929 0.505143L0.651577 0.522644C0.651577 0.522644 0.222795 0.535146 0.0652839 0.721409C-0.0747264 0.887671 0.054033 1.2302 0.054033 1.2302C0.054033 1.2302 2.2917 6.46433 4.82438 9.10327C7.1483 11.5222 9.786 11.3634 9.786 11.3634H10.9811C10.9811 11.3634 11.3424 11.3234 11.5261 11.1247C11.6961 10.9422 11.6899 10.5996 11.6899 10.5996C11.6899 10.5996 11.6661 8.99577 12.4112 8.7595C13.145 8.52698 14.0876 10.3096 15.0864 10.9959C15.8414 11.5147 16.4152 11.4009 16.4152 11.4009L19.0867 11.3634C19.0867 11.3634 20.4843 11.2772 19.8217 10.1784Z" fill="#FEFEFE"/>
+                </svg>
+            </a>
+        </div>
+        <img src="images/main/main-bg.jpg" alt="bg" class="promo__bg">
+    </main>
+
+    <section class="how">
+        <div class="container">
+            <div class="how__inner">
+                <h2 class="title title_tal how__title ct_color_FEFEFE">
+                    How it works?
+                </h2>
+        
+                <div class="how__text ct_color_F2F2F2">
+                    As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects, including providing veterinary support and raising much-needed emergency funds. Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve a life of dignity and compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.
+                </div>
+        
+                <div class="how__slider">
+                    <div class="swiper-how">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/how/deers.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/how/pandas.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/how/monkeys.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/how/monkeys2.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-controls">
+                            <div class="swiper-counter">
+                                <span class="swiper-counter__current">
+                                    00
+                                </span>/<span class="swiper-counter__total">
+                                    00
+                                </span>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="zoos.html" class="btn how__btn">
+                    <div class="play-mark"></div>
+                    watch online
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits ct_background_4F4F4F">
+        <div class="container">
+            <div class="benefits__inner">
+                <div class="benefits__item">
+                    <img src="images/benefits/idea.svg" alt="avg" class="benefits__img">
+                    <h4 class="benefits__hi ct_color_FEFEFE">
+                        What inspires us?
+                    </h4>
+                    <div class="benefits__low ct_color_F2F2F2">
+                        As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects.
+                    </div>
+                </div>
+                <div class="benefits__item">
+                    <img src="images/benefits/flag.svg" alt="avg" class="benefits__img">
+                    <h4 class="benefits__hi ct_color_FEFEFE">
+                        Our mission
+                    </h4>
+                    <div class="benefits__low ct_color_F2F2F2">
+                        Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. 
+                    </div>
+                </div>
+                <div class="benefits__item">
+                    <img src="images/benefits/love.svg" alt="avg" class="benefits__img">
+                    <h4 class="benefits__hi ct_color_FEFEFE">
+                        What we believe in?
+                    </h4>
+                    <div class="benefits__low ct_color_F2F2F2">
+                        Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve a life of dignity and compassion.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pets">
+        <div class="container">
+            <h2 class="title pets__title ct_color_FEFEFE">
+                Pets in Zoo
+            </h2>
+            <div class="pets__slider">
+                <div class="swiper-pets">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide animal-card animal-card_big">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Eagle`s name is Joomkhan. He is 1 year old. Joomkhan is from Afghanistan. He loves mices.
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#eagle' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/eagle.jpg" alt="animal" class="animal-card__img">
+                        </div>
+                        <div class="swiper-slide animal-card animal-card_big">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Panda`s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#panda' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/panda.jpg" alt="animal" class="animal-card__img">
+                        </div>
+                        <div class="swiper-slide animal-card animal-card_big">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Monkey`s name is Han. He is 4 years old. Han is from Nigeria. He loves bananas.
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#monkey' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/gorilla.webp" alt="animal" class="animal-card__img">
+                        </div>
+                        <div class="swiper-slide animal-card animal-card_big">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Croco`s name is Sally. He is 17 years old. Sally is from Tanzania. He loves goats:).
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#croco' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/alligator.jpg" alt="animal" class="animal-card__img">
+                        </div>
+                        <div class="swiper-slide animal-card animal-card_big">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Fox`s name is Redhead. He is 10 months old. Readhead is from Russia. He loves berries and meat.
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#fox' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/fox.jpg" alt="animal" class="animal-card__img">
+                        </div>
+                        <div class="swiper-slide animal-card animal-card_big">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Slothy is from Latin America. He came to us recently. He is a big banana lover.
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#sloth' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/sloth.webp" alt="animal" class="animal-card__img">
+                        </div>
+                        <div class="swiper-slide animal-card animal-card_big">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Biggy is one of rare elephants families from Savanna Deserts. He is 13 years old.
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#elephant' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/elephant.jpg" alt="animal" class="animal-card__img">
+                        </div>
+                        <div class="swiper-slide animal-card animal-card_big">
+                            <div class="animal-card__content">
+                                <div class="animal-card__descr">
+                                    Our Leo is the fastest animal in our family. He did have a hard soul, but now he is happier than ever.
+                                </div>
+                                <div class="animal-card__buttons">
+                                    <a href='zoos.html#leopard' class="animal-card__watch">
+                                        <div class="play-mark play-mark_green"></div>
+                                        watch online
+                                    </a>
+                                    <button class="popup__donate animal-card__donate">
+                                        <div class="animal-card__dollar">$</div>
+                                        donate
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="images/animals-slider/leopard.jpg" alt="animal" class="animal-card__img">
+                        </div>
+                    </div>
+                    <div class="swiper-controls">
+                        <div class="swiper-counter">
+                            <span class="swiper-counter__current">
+                                00
+                            </span>/<span class="swiper-counter__total">
+                                00
+                            </span>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <button class="swiper-button-next swiper-button-next_pets"></button>
+                <button class="swiper-button-prev swiper-button-prev_pets"></button>
+            </div>
+            <a href="zoos.html" class="btn  pets__btn">
+                Choose your favorite
+            </a>
+        </div>
+    </section>
+
+    <section class="payfeed ct_background_4F4F4F">
+        <div class="container">
+            <h2 class="title payfeed__title ct_color_FEFEFE">
+                Pay and feed
+            </h2>
+            <div class="payfeed__text ct_color_F2F2F2">
+                The opportunity to easily and naturally (but as often as possible) donate to the needs of animals that you like.
+            </div>
+
+            <div class="payfeed__algo">
+                <div class="payfeed__circle ct_color_FEFEFE">
+                    <img src="images/payfeed/card.svg" alt="svg" class="payfeed__icon">
+                    You pay with a<br>VISA card
+                </div>
+                <img src="images/payfeed/arrow.svg" alt="arrow" class="payfeed__arrow">
+                <div class="payfeed__circle ct_color_FEFEFE">
+                    <img src="images/payfeed/zoo.svg" alt="svg" class="payfeed__icon">
+                    Payment goes<br>to the Zoo
+                </div>
+                <img src="images/payfeed/arrow.svg" alt="arrow" class="payfeed__arrow">
+                <div class="payfeed__circle ct_color_FEFEFE">
+                    <img src="images/payfeed/panda.svg" alt="svg" class="payfeed__icon">
+                    Panda gets<br>the bamboo
+                </div>
+            </div>
+
+            <button class="btn   popup__donate payfeed__btn">
+                donate
+            </button>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="container">
+            <h2 class="title testimonial__title ct_color_FEFEFE">
+                Testimonials
+            </h2>
+            <div class="testimonial__slider">
+                <div class="swiper-testimonial">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonial__card ct_background_3C3C3C">
+                            <div class="testimonial__card-img">
+                                <img src="images/testimonials/default.svg" alt="human">
+                            </div>
+                            <h4 class="testimonial__card-title ct_color_FEFEFE">
+                                Nastya Sidorova
+                            </h4>
+                            <div class="testimonial__card-text ct_color_F2F2F2">
+                                As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial__card ct_background_3C3C3C">
+                            <div class="testimonial__card-img">
+                                <img src="images/testimonials/human.png" alt="human">
+                            </div>
+                            <h4 class="testimonial__card-title ct_color_FEFEFE">
+                                Vlad Kim
+                            </h4>
+                            <div class="testimonial__card-text ct_color_F2F2F2">
+                                As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial__card ct_background_3C3C3C">
+                            <div class="testimonial__card-img">
+                                <img src="images/testimonials/default.svg" alt="human">
+                            </div>
+                            <h4 class="testimonial__card-title ct_color_FEFEFE">
+                                Ivan Ivanov
+                            </h4>
+                            <div class="testimonial__card-text ct_color_F2F2F2">
+                                As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial__card ct_background_3C3C3C">
+                            <div class="testimonial__card-img">
+                                <img src="images/testimonials/default.svg" alt="human">
+                            </div>
+                            <h4 class="testimonial__card-title ct_color_FEFEFE">
+                                Inna Petrova
+                            </h4>
+                            <div class="testimonial__card-text ct_color_F2F2F2">
+                                As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial__card ct_background_3C3C3C">
+                            <div class="testimonial__card-img">
+                                <img src="images/testimonials/default.svg" alt="human">
+                            </div>
+                            <h4 class="testimonial__card-title ct_color_FEFEFE">
+                                Nastya Sidorova
+                            </h4>
+                            <div class="testimonial__card-text ct_color_F2F2F2">
+                                As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial__card ct_background_3C3C3C">
+                            <div class="testimonial__card-img">
+                                <img src="images/testimonials/human.png" alt="human">
+                            </div>
+                            <h4 class="testimonial__card-title ct_color_FEFEFE">
+                                Vlad Kim
+                            </h4>
+                            <div class="testimonial__card-text ct_color_F2F2F2">
+                                As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial__card ct_background_3C3C3C">
+                            <div class="testimonial__card-img">
+                                <img src="images/testimonials/default.svg" alt="human">
+                            </div>
+                            <h4 class="testimonial__card-title ct_color_FEFEFE">
+                                Ivan Ivanov
+                            </h4>
+                            <div class="testimonial__card-text ct_color_F2F2F2">
+                                As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial__card ct_background_3C3C3C">
+                            <div class="testimonial__card-img">
+                                <img src="images/testimonials/default.svg" alt="human">
+                            </div>
+                            <h4 class="testimonial__card-title ct_color_FEFEFE">
+                                Inna Petrova
+                            </h4>
+                            <div class="testimonial__card-text ct_color_F2F2F2">
+                                As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-controls">
+                        <div class="swiper-counter">
+                            <span class="swiper-counter__current">
+                                00
+                            </span>/<span class="swiper-counter__total">
+                                00
+                            </span>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <button class="swiper-button-next swiper-button-next_testimonial"></button>
+                <button class="swiper-button-prev swiper-button-prev_testimonial"></button>
+            </div>
+
+            <a href="#contact-form" class="btn   testimonial__btn">
+                Leave feedback
+            </a>
+        </div>
+    </section>
+
+    <section class="map ct_background_4F4F4F">
+        <div class="container">
+            <h2 class="title map__title ct_color_FEFEFE">
+                Map
+            </h2>
+
+            <div class='map__map'></div>
+
+            <a href="zoos.html" class="btn map__btn">
+                <div class="play-mark"></div>
+                watch online
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__grid">
+            <a class="footer__logo" href="index.html">
+                zoo
+                <div class="footer__logo_small">
+                    online
+                </div>
+            </a>
+            <nav class="nav footer__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link_white">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="zoos.html" class="nav__link nav__link_white">
+                            Zoos
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="map.html" class="nav__link nav__link_white">
+                            Map
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn btn_fw5 popup__donate footer__btn">
+                donate for volunteers
+            </button>
+            <form class="contact-form footer__form" id="contact-form">
+                <h4 class="contact-form__title">
+                    Contact us
+                </h4>
+                <input type="text" name="name" class="contact-form__input" placeholder="Name" required>
+                <input type="email" name="email"class="contact-form__input" placeholder="Email" required>
+                <div class="contact-form__textarea">
+                    <textarea name="message"></textarea>
+                    <label class="contact-form__label">
+                        Please enter your message
+                    </label>
+                </div>
+                <div class="contact-form__privacy">
+                    <input id="privacy_checkbox" class='contact-form__checkbox' type="checkbox" name="privacy" required>
+                    <label for="privacy_checkbox" class="contact-form__checkbox-label"></label>
+                    <label class="contact-form__label">
+                        I agree to the processing of Personal Data
+                    </label>
+                </div>
+                <button type="submit" class="contact-form__submit">
+                    SEND
+                    <img src="images/contact-form/arrow.svg" alt="arrow">
+                </button>
+            </form>
+            <div class="footer__info">
+                <h6 class="footer__name">
+                    ZOO Online Centre
+                </h6>
+                <div class="footer__address">
+                    132, Address District, Street<br>
+                    Open Daily 10:00 am - 5:00 pm
+                </div>
+                <div class="footer__contacts">
+                    T(702) 163-3433<br>
+                    zoo.online@gmail.com
+                </div>
+                <div class="socials footer__socials">
+                    <a href="http://instagram.com" class="social__link">
+                        <svg class="socials__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_32501_1246)">
+                            <path d="M13.75 0H6.25C2.79875 0 0 2.79875 0 6.25V13.75C0 17.2012 2.79875 20 6.25 20H13.75C17.2012 20 20 17.2012 20 13.75V6.25C20 2.79875 17.2012 0 13.75 0ZM18.125 13.75C18.125 16.1625 16.1625 18.125 13.75 18.125H6.25C3.8375 18.125 1.875 16.1625 1.875 13.75V6.25C1.875 3.8375 3.8375 1.875 6.25 1.875H13.75C16.1625 1.875 18.125 3.8375 18.125 6.25V13.75Z" fill="#FEFEFE"/>
+                            <path d="M10 5C7.23875 5 5 7.23875 5 10C5 12.7613 7.23875 15 10 15C12.7613 15 15 12.7613 15 10C15 7.23875 12.7613 5 10 5ZM10 13.125C8.2775 13.125 6.875 11.7225 6.875 10C6.875 8.27625 8.2775 6.875 10 6.875C11.7225 6.875 13.125 8.27625 13.125 10C13.125 11.7225 11.7225 13.125 10 13.125Z" fill="#FEFEFE"/>
+                            <path d="M15.3752 5.29148C15.7432 5.29148 16.0415 4.99319 16.0415 4.62523C16.0415 4.25727 15.7432 3.95898 15.3752 3.95898C15.0073 3.95898 14.709 4.25727 14.709 4.62523C14.709 4.99319 15.0073 5.29148 15.3752 5.29148Z" fill="#FEFEFE"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_32501_1246">
+                            <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="http://twitter.com" class="social__link">
+                        <svg class="socials__svg" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 1.92375C19.2562 2.25 18.4637 2.46625 17.6375 2.57125C18.4875 2.06375 19.1363 1.26625 19.4413 0.305C18.6488 0.7775 17.7737 1.11125 16.8412 1.2975C16.0887 0.49625 15.0162 0 13.8462 0C11.5762 0 9.74875 1.8425 9.74875 4.10125C9.74875 4.42625 9.77625 4.73875 9.84375 5.03625C6.435 4.87 3.41875 3.23625 1.3925 0.7475C1.03875 1.36125 0.83125 2.06375 0.83125 2.82C0.83125 4.24 1.5625 5.49875 2.6525 6.2275C1.99375 6.215 1.3475 6.02375 0.8 5.7225C0.8 5.735 0.8 5.75125 0.8 5.7675C0.8 7.76 2.22125 9.415 4.085 9.79625C3.75125 9.8875 3.3875 9.93125 3.01 9.93125C2.7475 9.93125 2.4825 9.91625 2.23375 9.86125C2.765 11.485 4.2725 12.6787 6.065 12.7175C4.67 13.8087 2.89875 14.4662 0.98125 14.4662C0.645 14.4662 0.3225 14.4512 0 14.41C1.81625 15.5812 3.96875 16.25 6.29 16.25C13.835 16.25 17.96 10 17.96 4.5825C17.96 4.40125 17.9537 4.22625 17.945 4.0525C18.7587 3.475 19.4425 2.75375 20 1.92375Z" fill="#FEFEFE"/>
+                        </svg>
+                    </a>
+                    <a href="http://youtube.com" class="social__link">
+                        <svg class="socials__svg" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.15 1.575C18.6075 0.61 18.0188 0.4325 16.82 0.365C15.6225 0.28375 12.6112 0.25 10.0025 0.25C7.38875 0.25 4.37625 0.28375 3.18 0.36375C1.98375 0.4325 1.39375 0.60875 0.84625 1.575C0.2875 2.53875 0 4.19875 0 7.12125C0 7.12375 0 7.125 0 7.125C0 7.1275 0 7.12875 0 7.12875V7.13125C0 10.0413 0.2875 11.7138 0.84625 12.6675C1.39375 13.6325 1.9825 13.8075 3.17875 13.8888C4.37625 13.9588 7.38875 14 10.0025 14C12.6112 14 15.6225 13.9587 16.8212 13.89C18.02 13.8087 18.6088 13.6338 19.1513 12.6688C19.715 11.715 20 10.0425 20 7.1325C20 7.1325 20 7.12875 20 7.12625C20 7.12625 20 7.12375 20 7.1225C20 4.19875 19.715 2.53875 19.15 1.575ZM7.5 10.875V3.375L13.75 7.125L7.5 10.875Z" fill="#FEFEFE"/>
+                        </svg>
+                    </a>
+                    <a href="http://vk.com" class="social__link">
+                        <svg class="socials__svg" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.8217 10.1784C19.768 10.0883 19.4355 9.36579 17.8353 7.88068C16.1602 6.32557 16.3852 6.57809 18.4029 3.88914C19.6317 2.25152 20.123 1.25145 19.9692 0.823916C19.823 0.416387 18.9192 0.523894 18.9192 0.523894L15.9139 0.541396C15.9139 0.541396 15.6914 0.511393 15.5252 0.610151C15.3639 0.707658 15.2602 0.932674 15.2602 0.932674C15.2602 0.932674 14.7839 2.20027 14.1488 3.27785C12.81 5.55176 12.2737 5.67177 12.0549 5.53051C11.5461 5.20174 11.6736 4.20792 11.6736 3.50286C11.6736 1.29895 12.0074 0.380134 11.0223 0.142616C10.6948 0.0638606 10.4548 0.0113567 9.61848 0.00260608C8.54591 -0.00864474 7.63709 0.00635635 7.1233 0.257625C6.78078 0.425137 6.51701 0.798915 6.67827 0.820166C6.87703 0.846418 7.32707 0.941425 7.56583 1.26645C7.87461 1.68523 7.86336 2.6278 7.86336 2.6278C7.86336 2.6278 8.04087 5.22174 7.44958 5.54426C7.0433 5.76553 6.487 5.31425 5.29317 3.25034C4.68187 2.19402 4.21934 1.02518 4.21934 1.02518C4.21934 1.02518 4.13058 0.807665 3.97182 0.691407C3.77931 0.550146 3.50929 0.505143 3.50929 0.505143L0.651577 0.522644C0.651577 0.522644 0.222795 0.535146 0.0652839 0.721409C-0.0747264 0.887671 0.054033 1.2302 0.054033 1.2302C0.054033 1.2302 2.2917 6.46433 4.82438 9.10327C7.1483 11.5222 9.786 11.3634 9.786 11.3634H10.9811C10.9811 11.3634 11.3424 11.3234 11.5261 11.1247C11.6961 10.9422 11.6899 10.5996 11.6899 10.5996C11.6899 10.5996 11.6661 8.99577 12.4112 8.7595C13.145 8.52698 14.0876 10.3096 15.0864 10.9959C15.8414 11.5147 16.4152 11.4009 16.4152 11.4009L19.0867 11.3634C19.0867 11.3634 20.4843 11.2772 19.8217 10.1784Z" fill="#FEFEFE"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal modal__donate">
+        <div class="modal__block">
+            <div class="modal__inner">
+                <div class="modal__img">
+                    <img src="images/modal/img.jpg" alt="bg">
+                </div>
+                <div class="modal__main">
+                    <h3 class="modal__title">
+                        Donate for your animal 
+                    </h3>
+                    <form class="modal__form">
+                        <div class="modal__animal">
+                            <select name="animal" id="animal" required>
+                                <option label=" "></option>
+                                <option value="Eagle">Eagle</option>
+                                <option value="Panda">Panda</option>
+                                <option value="Croco">Croco</option>
+                                <option value="Gorilla">Gorilla</option>
+                                <option value="Fox">Fox</option>
+                                <option value="Sloth">Sloth</option>
+                                <option value="Elephant">Elephant</option>
+                                <option value="Leopard">Leopard</option>
+                            </select>
+                            <label for="animal" class="modal__label">Choose an animal</label>
+                        </div>
+                        <div class="modal__donation">
+                            <input type="number" name="Donation valie" id="donation" required>
+                            <label for="donation" class="modal__label">To donate</label>
+                        </div>
+                        <div class="modal__about">
+                            <h6 class="modal__subtitle">
+                                About You
+                            </h6>
+                            <div class="modal__name">
+                                <input type="text" name="Name" id="name" required>
+                                <label for="name" class="modal__label">Name</label>
+                            </div>
+                            <div class="modal__email">
+                                <input type="email" name="E-mail" id="email" required>
+                                <label for="email" class="modal__label">E-mail</label>
+                            </div>
+                            <div class="modal__phone">
+                                <input type="tel" name="Phone" id="phone" required>
+                                <label for="phone" class="modal__label">Phone</label>
+                            </div>
+                        </div>
+                        <div class="modal__checkout">
+                            <h6 class="modal__subtitle">
+                                Checkout
+                            </h6>
+                            <div class="modal__cardnum">
+                                <input type="text" name="Card Number" id="cardnum" required>
+                                <label for="cardnum" class="modal__label">Card Number</label>
+                            </div>
+                            <div class="modal__expires">
+                                <input type="text" name="Expires" id="expires" required>
+                                <label for="expires" class="modal__label">Expiry date</label>
+                            </div>
+                            <div class="modal__cvc">
+                                <input type="text" name="CVC" id="cvc" maxlength="3" required>
+                                <label for="cvc" class="modal__label">CVC</label>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="modal__info">
+                        If don’t cancel your subscription before the trial ends on April 15, 2021, you agree that you will automatically be charged
+                    </div>
+                    <button class="btn btn_green modal__btn modal__submit" type="submit">
+                        Donate
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal__close">
+            ✕
+        </div>
+    </div>
+
+    <script src="js/swiper/swiper-bundle.min.js"></script>
+    <script type='module' src="js/main.min.js"></script>
+</body>
+</html>

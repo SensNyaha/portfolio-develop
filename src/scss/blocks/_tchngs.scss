@@ -1,0 +1,121 @@
+.tchngs {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    &__title {
+        font-size: calc($index * 1.5)
+    }
+    &__content {
+        flex-grow: 1;
+
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: calc($index / 2);
+    }
+    &__item {
+        width: calc($index * 4.5);
+        height: calc($index * 4.5);
+        max-width: 170px;
+        max-height: 170px;
+        border-radius: 100%;
+
+        box-shadow: 2px 2px 7px black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 2;
+
+        transition: width 0.5s, height 0.5s;
+        transition-delay: .3s;
+
+        position: relative;
+        
+        
+        img {
+            width: calc($index * 3.3);
+            height: calc($index * 3.3);
+            
+            max-width: 120px;
+            max-height: 120px;
+            
+            transition: width 0.5s, height 0.5s;
+            transition-delay: .3s;
+        }
+
+        &-info {
+            position: absolute;
+            left: 0;
+            top: 0;
+            
+            width: calc($index * 8);
+            height: calc($index * 8);
+            // width: max-content;
+            padding: 0;
+
+            pointer-events: none;
+
+            box-shadow: 2px 2px 4px black;
+            border-radius: 100%;
+            opacity: 0;
+            
+            overflow: hidden;
+            z-index: -1;
+
+            transition: all 0.3s;
+
+            background-color: #fff;
+
+            display: flex;
+            justify-content: center;
+            align-items:center;
+
+            &.opened {
+                padding: $index;
+
+                opacity: 5;
+                z-index: 99;
+        
+                left: 0;
+                top: 0;
+ 
+                transition: all 0.5s 0s;
+
+                pointer-events: all;
+            }
+        }
+        &:hover {
+            width: calc($index * 7);
+            height: calc($index * 7);
+
+            max-width: 270px;
+            max-height: 270px;
+
+            transition-delay: 0s;
+
+            z-index: 5;
+            
+            img {
+                width: calc($index * 4.8);
+                height: calc($index * 4.8);
+                
+                max-width: 200px;
+                max-height: 200px;
+
+                transition-delay: 0s; 
+            }
+        
+            
+        }
+    }
+}
