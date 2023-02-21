@@ -236,16 +236,16 @@ export default function technologies() {
             }
             if (rects.width >= parseFloat(rects.left)) {
                 infoElem.style.left = Math.abs(parseFloat(infoElem.style.left)) + 'px';
-                console.log('+') 
+                // console.log('+') 
             }
             else if (rects.width >= div.closest('.tchngs__content').offsetWidth - parseFloat(rects.left) - rects.width){
                 infoElem.style.left = -Math.abs(parseFloat(infoElem.style.left)) + 'px';
-                console.log('-')
+                // console.log('-')
             }
             if (rects.height >= parseFloat(rects.top)) {
                 infoElem.style.top = Math.abs(parseFloat(infoElem.style.top)) + 'px';
             }
-            else if (rects.height >= div.closest('.tchngs__content').offsetheight - parseFloat(rects.left) - rects.height){
+            else if (rects.height >= div.closest('.tchngs__content').offsetHeight - parseFloat(rects.left) - rects.height){
                 infoElem.style.top = -Math.abs(parseFloat(infoElem.style.top)) + 'px';
             }
             
