@@ -47,7 +47,7 @@ function watching() {
 
 
 function cleanDist() {
-    return del('dist')
+    return del(['dist/**', '!dist/.git'])
 }
 function build() {
     return src([
@@ -55,7 +55,8 @@ function build() {
         'src/fonts/**/*',
         'src/js/**/*.js',
         '!src/js/main.js',
-        'src/*.html'
+        'src/*.html',
+        'src/projects/**/*'
     ], {base: 'src'})
     .pipe(dest('dist'))
 }

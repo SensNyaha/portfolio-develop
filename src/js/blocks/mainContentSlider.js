@@ -1,8 +1,9 @@
 export default function mainContentSlider() {
-    let currentSlide = 1;
+    let currentSlide = 4;
     // const slidesCount = document.querySelectorAll('.wrapper .content > *').length;
     const slidesCount = 5;
     const contentBlock = document.querySelector('.content');
+    changeContentBlockTranslate(contentBlock, currentSlide)
 
     const controlLeft = document.querySelector('.controls__button--left');
     if (currentSlide === 1) {
