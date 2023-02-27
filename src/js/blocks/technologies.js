@@ -230,26 +230,22 @@ export default function technologies() {
             const infoElem = currentOpenedDiv.querySelector('.tchngs__item-info');
             infoElem.classList.add('opened')
 
-            if (currentOpenedDiv !== prevOpenedDiv) {
+            if (currentOpenedDiv !== prevOpenedDiv || currentOpenedDiv.style.top !== prevOpenedDiv.style.top && currentOpenedDiv.style.left !== prevOpenedDiv.style.left) {
                 const rects = infoElem.getBoundingClientRect();
                 if (!rects.width && !rects.height) {
                     rects = window.getComputedStyle(infoElem)
                 }
                 if (rects.width >= parseFloat(rects.left)) {
                     infoElem.style.left = Math.abs(parseFloat(infoElem.style.left)) + 'px';
-                    console.log('left+')
                 }
                 else if (rects.width >= div.closest('.tchngs__content').offsetWidth - parseFloat(rects.left) - rects.width){
                     infoElem.style.left = -Math.abs(parseFloat(infoElem.style.left)) + 'px';
-                    console.log('left-')
                 }
                 if (rects.height >= parseFloat(rects.top)) {
                     infoElem.style.top = Math.abs(parseFloat(infoElem.style.top)) + 'px';
-                    console.log('top+')
                 }
                 else if (rects.height >= div.closest('.tchngs__content').offsetHeight - parseFloat(rects.top) - rects.height){
                     infoElem.style.top = -Math.abs(parseFloat(infoElem.style.top)) + 'px';
-                    console.log('top-')
                 }
             }
             
