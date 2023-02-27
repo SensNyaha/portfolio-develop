@@ -37,7 +37,7 @@ export default function () {
             previewImage: '/projects/battleship/preview.jpg'
         },
         battleshipReact: {
-            path: '/projects/react-battleship',
+            path: 'https://sensnyaha.github.io/react-battleship',
             previewImage: '/projects/react-battleship/preview.jpg'
         },
         blogReact: {
