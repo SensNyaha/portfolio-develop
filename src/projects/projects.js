@@ -1,52 +1,48 @@
 export default function () {
     return {
         amoCRM: {
-            path: '/projects/amoCRM',
-            previewImage: '/projects/amoCRM/preview.jpg'
+            path: 'https://sensnyaha.github.io/amoCRM_layout',
+            previewImage: '/projects/amoCRM.jpg'
         },
         courseMaster: {
-            path: '/projects/course-master',
-            previewImage: '/projects/course-master/preview.jpg'
+            path: 'https://sensnyaha.github.io/course-master',
+            previewImage: '/projects/course-master.jpg'
         },
         gidGroup: {
-            path: '/projects/gid-group',
-            previewImage: '/projects/gid-group/preview.jpg'
+            path: 'https://sensnyaha.github.io/gid-group',
+            previewImage: '/projects/gid-group.jpg'
         },
         odeme: {
-            path: '/projects/odeme',
-            previewImage: '/projects/odeme/preview.jpg'
+            path: 'https://sensnyaha.github.io/odeme',
+            previewImage: '/projects/odeme.jpg'
         },
         pravosoznanie: {
-            path: '/projects/pravosoznanie',
-            previewImage: '/projects/pravosoznanie/preview.jpg'
+            path: 'https://sensnyaha.github.io/pravosoznanie',
+            previewImage: '/projects/pravosoznanie.jpg'
         },
         primorie: {
-            path: '/projects/primorie',
-            previewImage: '/projects/primorie/preview.jpg'
+            path: 'https://sensnyaha.github.io/primorie',
+            previewImage: '/projects/primorie.jpg'
         },
         zoo: {
-            path: '/projects/zoo',
-            previewImage: '/projects/zoo/preview.jpg'
+            path: 'https://sensnyaha.github.io/online-zoo',
+            previewImage: '/projects/zoo.jpg'
         },
         battleshipJS: {
-            path: '/projects/battleship',
-            previewImage: '/projects/battleship/preview.jpg'
-        },
-        battleshipJS: {
-            path: '/projects/battleship',
-            previewImage: '/projects/battleship/preview.jpg'
+            path: 'https://sensnyaha.github.io/battleship',
+            previewImage: '/projects/battleship.jpg'
         },
         battleshipReact: {
             path: 'https://sensnyaha.github.io/react-battleship',
-            previewImage: '/projects/react-battleship/preview.jpg'
+            previewImage: '/projects/react-battleship.jpg'
         },
         blogReact: {
             path: 'https://github.com/SensNyaha/easy-blog',
-            previewImage: '/projects/react-blog/preview.jpg'
+            previewImage: '/projects/react-blog.jpg'
         },
         actionReact: {
-            path: '/projects/react-action',
-            previewImage: '/projects/react-action/preview.jpg'
+            path: 'https://sensnyaha.github.io/react-action-proj',
+            previewImage: '/projects/react-action.jpg'
         }
     }
 }
