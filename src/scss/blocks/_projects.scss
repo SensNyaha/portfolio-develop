@@ -1,5 +1,6 @@
 .projects {
     height: 100%;
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -33,18 +34,28 @@
             align-items:center;
 
         }
-        &__slide {
+        &__slide-wrapper {
             display: flex;
-            align-items:center;
             justify-content: center;
-
-            flex-shrink: 0;
+            align-items:center;
+        }
+        &__slide {
+            height: 100%;
             
             border-radius: calc($index * 2);
+
+            &:hover {
+                img {
+                    filter: grayscale(0.1);
+                    box-shadow: none;
+
+                    transform: translate(2px, 2px);
+                }
+            }
             img {
                 max-height: 100%;
                 
-                filter: grayscale(0.9);
+                filter: grayscale(1);
                 
                 transition: all 0.5s;
                 
@@ -52,13 +63,70 @@
                 
                 display: block;
                 box-shadow: 2px 2px 10px #000;
-                &:hover {
-                    filter: grayscale(0.2);
-                    box-shadow: none;
+            }
+        }
 
-                    transform: translate(2px, 2px);
-                }
+        &__next, &__prev {
+            &:after {
+                display: none;
+            }
+        }
+        &__next {
+            &:hover {
+                animation: arrowToRight 1.5s ease-in-out 0s infinite normal;
+            }
+        }
+        &__prev {
+            &:hover {
+                animation: arrowToLeft 1.5s ease-in-out 0s infinite normal;
             }
         }
     }
+}
+
+@keyframes arrowToRight {
+    0% {
+        transform: none;
+    }
+    20% {
+        transform: scaleY(0.8) translateX(3px);
+    }
+    40% {
+        transform: scaleY(1);
+    }
+    60% {
+        transform: scaleY(1.2) translateX(-3px);
+    }
+    80% {
+        transform: scaleY(0.8);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes arrowToLeft {
+    0% {
+        transform: none;
+    }
+    20% {
+        transform: scaleY(0.8) translateX(-3px);
+    }
+    40% {
+        transform: scaleY(1);
+    }
+    60% {
+        transform: scaleY(1.2) translateX(+3px);
+    }
+    80% {
+        transform: scaleY(0.8);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.swiper-button-disabled {
+    opacity: 0 !important;
+
+    transition: all .5s;
 }
