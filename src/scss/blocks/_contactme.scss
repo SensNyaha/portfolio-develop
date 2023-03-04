@@ -18,9 +18,9 @@
         flex-grow: 1;
         width: 100%;
 
-        // display: flex;
-        // justify-content: center;
-        // align-items:center;
+        display: flex;
+        justify-content: center;
+        align-items:center;
 
         font-size: calc($index / 1.5);
         font-family: 'Tapestry', sans-serif;
@@ -103,6 +103,7 @@
     }
 
     &__submit { 
+        margin-top: calc($index * 3);
         display: block;
 
         padding: calc($index / 2) $index;

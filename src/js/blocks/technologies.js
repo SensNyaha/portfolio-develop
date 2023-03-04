@@ -40,7 +40,6 @@ export default function technologies() {
             
             const x = randomedX - itemWidth > 0 ? randomedX - itemWidth : randomedX;
             const y = randomedY - itemHeight > 0 ? randomedY - itemHeight : randomedY;
-            console.log(i);
             
             positions[techDivs[i].dataset.tchn] = {...positions[techDivs[i].dataset.tchn], left: x + 'px', top: y + 'px'};
 
