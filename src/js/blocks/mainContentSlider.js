@@ -1,5 +1,5 @@
 export default function mainContentSlider() {
-    let currentSlide = 4;
+    let currentSlide = 5;
     // const slidesCount = document.querySelectorAll('.wrapper .content > *').length;
     const slidesCount = 5;
     const contentBlock = document.querySelector('.content');

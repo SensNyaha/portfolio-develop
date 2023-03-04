@@ -1,0 +1,121 @@
+.contactme {
+    height: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $index;
+    
+    text-align: center;
+    
+    overflow: hidden;
+    
+    &__title {
+        font-size: calc($index * 1.5)
+    }
+    &__content {
+        flex-grow: 1;
+        width: 100%;
+
+        // display: flex;
+        // justify-content: center;
+        // align-items:center;
+
+        font-size: calc($index / 1.5);
+        font-family: 'Tapestry', sans-serif;
+    }
+
+
+    &__form {
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: $index;
+    }
+    &__input {
+        padding: calc($index / 2);
+        text-align: center;
+
+        border: none;
+        border-bottom: 1px solid #a5a5a5;
+
+        width: 100%;
+
+        &:focus-visible {
+            outline: 1px solid #b9b9b9;
+        }
+
+        &--sm {
+            max-width: 30%;
+        }
+    }
+    &__ways {
+        display: flex;
+        flex-direction: column;
+        gap: calc($index / 2);
+
+        width: 100%;
+
+        &-input {
+            pointer-events: none;
+
+            opacity: 0.5;
+            background-color: rgb(184, 184, 184);
+
+            transition: all 0.5s;
+
+            &--avl {
+                opacity: 1;
+                background-color: transparent;
+                pointer-events: all;
+            }
+        }
+    }
+    &__radio {
+        display: none;
+    }
+    &__label {
+        padding: calc($index / 2);
+
+        cursor: pointer;
+        transition: all 0.5s;
+        &--chosen, &:hover {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+        }
+    }
+    &__textarea {
+        width: 80%;
+        height: calc($index * 5);
+        padding: calc($index);
+
+        resize: none;
+
+        border: none;
+        border-bottom: 1px solid #a5a5a5;
+        &:focus-visible {
+            outline: 1px solid #b9b9b9;
+        }
+
+    }
+
+    &__submit { 
+        display: block;
+
+        padding: calc($index / 2) $index;
+
+        background-color: #000;
+        border: 1px solid #000;
+        color: #fff;
+
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: transparent;
+            color: #000;
+        }
+    }
+}
