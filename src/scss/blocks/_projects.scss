@@ -30,9 +30,9 @@
         width: calc($index * 50);
         max-width: 85vw;
 
+
         &__wrapper {
             align-items:center;
-
         }
         &__slide-wrapper {
             display: flex;
@@ -43,6 +43,10 @@
             height: 100%;
             
             border-radius: calc($index * 2);
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             &:hover {
                 img {

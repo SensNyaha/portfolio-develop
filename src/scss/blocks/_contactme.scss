@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
 .contactme {
     height: 100%;
     position: relative;
@@ -23,17 +26,31 @@
         align-items:center;
 
         font-size: calc($index / 1.5);
-        font-family: 'Tapestry', sans-serif;
+        font-family: 'Raleway', sans-serif;
     }
 
 
     &__form {
         width: 100%;
+        position: relative;
+
+        padding: $index;
         
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        gap: $index;
+
+        &-inner {
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            gap: calc($index * 2);
+    
+            transition: all .3s;
+            &.blocked {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
     }
     &__input {
         padding: calc($index / 2);
@@ -55,7 +72,7 @@
     &__ways {
         display: flex;
         flex-direction: column;
-        gap: calc($index / 2);
+        gap: calc($index);
 
         width: 100%;
 
@@ -118,5 +135,112 @@
             background-color: transparent;
             color: #000;
         }
+    }
+
+    &__status {
+        display: flex;
+        gap: $index;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        opacity: 0;
+        z-index: -5;
+
+        transition: all 0.5s;
+
+        span {
+            display: block;
+            width: $index;
+            height: $index;
+            border-radius: 100%;
+
+            background-color: #000;
+            
+            position: relative;
+
+            transition: all 0.5s;
+
+            animation: shakeUpNDown 1s linear infinite;
+    
+            &:first-child {
+                animation-delay: .66s;
+            }
+            &:last-child {
+                animation-delay: 0.33s;
+            }
+        }
+
+        &.loading {
+            opacity: 1;
+            z-index: 999;
+        }
+        &.success {
+            opacity: 1;
+            z-index: 999;
+
+            span {
+                animation: none;
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:first-child {
+                    transform: rotate(45deg) translate(calc($index * 3), calc($index * -.75));
+
+                    width: calc($index * 3);
+                    border-radius: 0;
+                }
+                &:last-child {
+                    transform: rotate(-45deg) translate(calc($index * -2), calc($index * -1));
+
+                    width: calc($index * 6);
+                    border-radius: 0;
+                }
+            }
+        }
+        &.fail {
+            opacity: 1;
+            z-index: 999;
+
+            span {
+                animation: none;
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:first-child {
+                    transform: translateX(calc($index * 3.7)) rotate(45deg);
+
+                    width: calc($index * 4.5);
+                    border-radius: 0;
+                }
+                &:last-child {
+                    transform: translateX(calc($index * -3.7)) rotate(-45deg);
+
+                    width: calc($index * 4.5);
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}
+@keyframes shakeUpNDown {
+    0% {
+        top: 0;
+    }
+    25% {
+        top: calc($index * -1);
+    }
+    50% {
+        top: 0;
+    }
+    75% {
+        top: $index;
+    }
+    100% {
+        top: 0;
     }
 }

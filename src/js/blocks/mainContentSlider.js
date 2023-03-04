@@ -1,5 +1,5 @@
 export default function mainContentSlider() {
-    let currentSlide = 1;
+    let currentSlide = 5;
     const slidesCount = document.querySelectorAll('.wrapper .content > *').length;
     const contentBlock = document.querySelector('.content');
     changeContentBlockTranslate(contentBlock, currentSlide)

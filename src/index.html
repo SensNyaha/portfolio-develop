@@ -166,31 +166,37 @@
         </h2>
         <div class="contactme__content">
           <form action="" class="contactme__form">
-            <input type="text" class="contactme__input contactme__input--sm" placeholder="Как к Вам обращаться?" required>
-            <div class="contactme__ways">
-              Как с Вами связаться?
-              <div class="contactme__radios">
-                <label class="contactme__label contactme__label--chosen">
-                  По электронной почте
-                  <input type="radio" name="way" class="contactme__radio" data-way="email">
-                </label>
-                <label class="contactme__label">
-                  По телефону
-                  <input type="radio" name="way" class="contactme__radio" data-way="tel">
-                </label>
-                <label class="contactme__label">
-                  Голубиной почтой
-                  <input type="radio" name="way" class="contactme__radio" data-way="address">
-                </label>
+            <div class="contactme__form-inner">
+              <input name='name' type="text" class="contactme__input contactme__input--sm" placeholder="Как к Вам обращаться?" required  autocomplete="no">
+              <div class="contactme__ways">
+                Как с Вами связаться?
+                <div class="contactme__radios">
+                  <label class="contactme__label contactme__label--chosen">
+                    По электронной почте
+                    <input type="radio" name="way" class="contactme__radio" data-way="email" value="Почта" autocomplete="no">
+                  </label>
+                  <label class="contactme__label">
+                    По телефону
+                    <input type="radio" name="way" class="contactme__radio" data-way="tel"  value="Телефон" autocomplete="no">
+                  </label>
+                  <label class="contactme__label">
+                    Голубиной почтой
+                    <input type="radio" name="way" class="contactme__radio" data-way="address"  value="Голубиная почта" autocomplete="no">
+                  </label>
+                </div>
+                <div class="contactme__contact-ways">
+                  <input type="email" name="email" class="contactme__input contactme__input--sm contactme__ways-input contactme__ways-input--avl" placeholder="Адрес электронного ящика">
+                  <input type="tel" name="tel" class="contactme__input contactme__input--sm contactme__ways-input" placeholder="Номер телефона">
+                  <input type="text" name="address" class="contactme__input contactme__input--sm contactme__ways-input" placeholder="Адрес соседской голубятни">
+                </div>
               </div>
-              <div class="contactme__contact-ways">
-                <input type="email" name="email" class="contactme__input contactme__input--sm contactme__ways-input contactme__ways-input--avl" placeholder="Адрес электронного ящика">
-                <input type="tel" name="tel" class="contactme__input contactme__input--sm contactme__ways-input" placeholder="Номер телефона">
-                <input type="text" name="address" class="contactme__input contactme__input--sm contactme__ways-input" placeholder="Адрес соседской голубятни">
-              </div>
+              <textarea name="comment" class="contactme__textarea" placeholder="Если хотите оставить дополнительную информацию"></textarea>
+              <input class="contactme__submit" type="submit" value="Отправить">
             </div>
-            <textarea name="comment" class="contactme__textarea" placeholder="Если хотите оставить дополнительную информацию"></textarea>
-            <input class="contactme__submit" type="submit" value="Отправить">
+
+            <div class="contactme__status">
+              <span></span><span></span><span></span>
+            </div>
           </form>
         </div>
       </div>
@@ -204,6 +210,12 @@
       <img src="./images/arrow-right.svg" alt="Стрелка вправо" class="controls__button--img">
     </button>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("JKp3Wmqvx-xK_iou0");
+   })();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script type="module" src="js/main.min.js"></script>
 </body>
