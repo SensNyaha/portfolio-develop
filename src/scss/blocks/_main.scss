@@ -59,6 +59,7 @@
         font-weight: 900;
     }
     &__anchor {
+        cursor: pointer;
         &:hover {
             font-weight: 400;
             color: #111;

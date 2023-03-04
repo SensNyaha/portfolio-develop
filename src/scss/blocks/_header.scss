@@ -14,6 +14,8 @@
         align-items: center;
         gap: calc($index * 0.75);
 
+        cursor: pointer;
+
         font-family: 'Poiret One', cursive;
         font-size: calc($index * 1.1);
 

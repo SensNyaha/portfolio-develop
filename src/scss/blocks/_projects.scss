@@ -129,6 +129,12 @@
     }
 }
 
+.swiper-button-prev {
+    left: -5px;
+}
+.swiper-button-next {
+    right: -5px;
+}
 .swiper-button-disabled {
     opacity: 0 !important;
 
