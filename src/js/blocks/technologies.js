@@ -32,14 +32,16 @@ export default function technologies() {
         const itemWidth = techDivs[0].offsetWidth;
         const itemHeight = techDivs[0].offsetHeight;
 
+        let j = 0;
+
         for (let i = 0; i < techDivs.length; i++) {
-            
             const randomedX = Math.random() * parentWidth;
             const randomedY = Math.random() * parentHeight;
-
+            
             const x = randomedX - itemWidth > 0 ? randomedX - itemWidth : randomedX;
             const y = randomedY - itemHeight > 0 ? randomedY - itemHeight : randomedY;
-
+            console.log(i);
+            
             positions[techDivs[i].dataset.tchn] = {...positions[techDivs[i].dataset.tchn], left: x + 'px', top: y + 'px'};
 
             let collision = false;
@@ -52,8 +54,10 @@ export default function technologies() {
                 }
             })
             if (collision) {
-                i--;
-                continue;
+                if (++j <= 150) {
+                    i--;
+                    continue;
+                }
             }
             placeDivByState(techDivs[i], positions)
 
@@ -181,7 +185,7 @@ export default function technologies() {
     moveItems();
     timer = setInterval(moveItems, 0)
 
-    let currentOpenedDiv, prevOpenedDiv, infoShowTimer;
+    let currentOpenedDiv, prevOpenedDiv, prevDivTop, prevDivLeft, infoShowTimer;
 
     function changeInfoBlocksPos(techDivs) {
         techDivs.forEach(div => {
@@ -230,7 +234,7 @@ export default function technologies() {
             const infoElem = currentOpenedDiv.querySelector('.tchngs__item-info');
             infoElem.classList.add('opened')
 
-            if (currentOpenedDiv !== prevOpenedDiv || currentOpenedDiv.style.top !== prevOpenedDiv.style.top && currentOpenedDiv.style.left !== prevOpenedDiv.style.left) {
+            if (currentOpenedDiv !== prevOpenedDiv || currentOpenedDiv.style.top !== prevDivTop && currentOpenedDiv.style.left !== prevDivLeft) {
                 const rects = infoElem.getBoundingClientRect();
                 if (!rects.width && !rects.height) {
                     rects = window.getComputedStyle(infoElem)
@@ -253,6 +257,9 @@ export default function technologies() {
         div.addEventListener('mouseleave', (e) => {
             const divElem = e.target.closest('.tchngs__item') 
             prevOpenedDiv = divElem;
+
+            prevDivTop = prevOpenedDiv.style.top;
+            prevDivLeft = prevOpenedDiv.style.left;
 
             infoShowTimer = setTimeout(() => {
 

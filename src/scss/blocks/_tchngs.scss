@@ -63,6 +63,8 @@
             // width: max-content;
             padding: 0;
 
+            font-size: calc($index / 2);
+
             pointer-events: none;
 
             box-shadow: 2px 2px 4px black;
