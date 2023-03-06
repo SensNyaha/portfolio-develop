@@ -41,7 +41,6 @@
 
         position: relative;
         
-        
         img {
             width: calc($index * 3.3);
             height: calc($index * 3.3);
@@ -60,7 +59,6 @@
             
             width: calc($index * 8);
             height: calc($index * 8);
-            // width: max-content;
             padding: 0;
 
             font-size: calc($index / 2);
@@ -119,5 +117,11 @@
         
             
         }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .tchngs {
+    
     }
 }
