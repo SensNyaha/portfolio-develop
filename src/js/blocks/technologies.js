@@ -214,8 +214,6 @@ export default function technologies() {
                 infoElem.style.transition = 'all 0.3s';
             }
             
-            console.log(infoElem.style.height, infoElem.style.width)
-
             const deltaDest = Math.sqrt(2 * ((infoElem.offsetWidth/2) ** 2)) - infoElem.offsetWidth/2 + Math.sqrt(2 * ((div.offsetWidth/2) ** 2)) - div.offsetWidth/2;
     
             infoElem.style.left = -parseFloat(infoElem.style.width) + deltaDest + 'px';

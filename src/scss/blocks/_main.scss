@@ -74,3 +74,15 @@
       -webkit-text-stroke: 1px #333;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .main {
+        flex-direction: column;
+        &__title {
+            align-self: flex-start;
+        }
+        &__nav {
+            align-self: flex-end
+        }
+    }
+}

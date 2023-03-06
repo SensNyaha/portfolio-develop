@@ -23,3 +23,34 @@
         font-family: 'Tapestry', sans-serif;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .whoami {
+        &__left {
+            width: 25%;
+        }
+        &__img {
+            width: auto;
+        }
+        &__right {
+            width: 75%;
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .whoami {
+        flex-direction: column;
+
+        &__left {
+            align-self: flex-start;
+
+            width: 35%;
+        }
+        &__right {
+            align-self: flex-end;
+
+            width: 100%;
+        }
+    }
+}
